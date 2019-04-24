@@ -1,0 +1,5 @@
+classes=1
+Train  = /home/dsal-gur-desktop1/gun_classifier/train_shuf.txt
+valid  = /home/anerudh/darknet_orig/gun2/test_shuf.txt
+names = /home/anerudh/darknet_orig/gun2/gun.names
+backup = /home/anerudh/darknet_orig/backup_guns

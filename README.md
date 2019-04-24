@@ -1,4 +1,19 @@
-﻿# Yolo-v3 and Yolo-v2 for Windows and Linux
+﻿
+# Instructions for postprocessing weight files for best mAP 
+
+1. For calculating the best mAP and related iterations from existing weigh files.
+
+2.For all the paths required such as, path to weight files, cfg file, data file go to plot.conf.
+
+3. First, delete all .pckl and .log files in the darknet/ folder, then run dump_csv.py. This produces .pckl and .log files for the weights in the mentioned path and produces the .csv file with headers for the weight iteration, AP for each objects, F1-score and mAP in each line for ewach weight file.
+
+4.Then, run plot_map.py. This uses the csv file created by dump_csv.py and implements stopping conditions with parametres mentioned in plot.conf. The best mAP, the corrsponding iteration and epoch are printed out.
+
+
+#####################################################################################################################################################################################
+
+
+# Yolo-v3 and Yolo-v2 for Windows and Linux
 ### (neural network for object detection) - Tensor Cores can be used on [Linux](https://github.com/AlexeyAB/darknet#how-to-compile-on-linux) and [Windows](https://github.com/AlexeyAB/darknet#how-to-compile-on-windows-using-vcpkg)
 
 Contributors: https://github.com/AlexeyAB/darknet/graphs/contributors 
